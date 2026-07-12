@@ -10,6 +10,8 @@ h1, h2, p { margin: 0; } h1 { font-size: 2.3rem; letter-spacing: -.06em; } h2 { 
 .game-wrap { position: relative; border: 5px solid #f8fafc; border-radius: 14px; overflow: hidden; box-shadow: 0 18px 55px #0009; }
 canvas { display: block; width: 100%; height: auto; background: #303945; touch-action: none; }
 .overlay { position: absolute; inset: 0; display: grid; place-content: center; gap: 12px; text-align: center; padding: 32px; background: #0c1522d9; }
+.plate-input { display: grid; gap: 6px; color: #cbd5e1; font-size: .85rem; font-weight: 700; }
+.plate-input input { width: 210px; padding: 10px 12px; border: 2px solid #f8fafc; border-radius: 6px; background: #fef3c7; color: #172033; text-align: center; font: 800 .95rem ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; }
 .hidden { display: none; }
 button { justify-self: center; border: 0; cursor: pointer; border-radius: 999px; padding: 12px 20px; font-weight: 800; font-size: 1rem; color: #082f49; background: #7dd3fc; box-shadow: 0 4px 0 #0c4a6e; }
 button:active { transform: translateY(3px); box-shadow: 0 1px 0 #0c4a6e; }

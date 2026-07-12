@@ -22,8 +22,11 @@
       <section class="game-wrap" aria-label="Car Dash game">
         <canvas id="game" width="420" height="620"></canvas>
         <div id="startScreen" class="overlay">
-          <h2>Ready to drive?</h2>
+          <h2>Ready to drive Harold's car game?</h2>
           <p>Use ← → or A / D to dodge traffic.</p>
+          <label class="plate-input" for="driverName">Driver name
+            <input id="driverName" maxlength="10" placeholder="YOUR NAME" autocomplete="nickname" />
+          </label>
           <button id="startButton">Start game</button>
         </div>
         <div id="gameOver" class="overlay hidden">
