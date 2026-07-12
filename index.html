@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Dash</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header>
+        <div>
+          <p class="eyebrow">ENDLESS HIGHWAY</p>
+          <h1>Car Dash</h1>
+        </div>
+        <div class="stats" aria-live="polite">
+          <span>Passed <b id="score">0</b></span>
+          <span>Speed <b id="speed">1.0x</b></span>
+        </div>
+      </header>
+
+      <section class="game-wrap" aria-label="Car Dash game">
+        <canvas id="game" width="420" height="620"></canvas>
+        <div id="startScreen" class="overlay">
+          <h2>Ready to drive?</h2>
+          <p>Use ← → or A / D to dodge traffic.</p>
+          <button id="startButton">Start game</button>
+        </div>
+        <div id="gameOver" class="overlay hidden">
+          <p class="eyebrow">CRASHED</p>
+          <h2>Game over</h2>
+          <p>You passed <strong id="finalScore">0</strong> obstacles.</p>
+          <button id="restartButton">Drive again</button>
+        </div>
+      </section>
+      <p class="help">Every obstacle you pass makes the road faster.</p>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
