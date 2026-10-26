@@ -1,43 +1,7 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Car Dash</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="game-shell">
-      <header>
-        <div>
-          <p class="eyebrow">ENDLESS HIGHWAY</p>
-          <h1>Car Dash</h1>
-        </div>
-        <div class="stats" aria-live="polite">
-          <span>Passed <b id="score">0</b></span>
-          <span>Speed <b id="speed">1.0x</b></span>
-        </div>
-      </header>
-
-      <section class="game-wrap" aria-label="Car Dash game">
-        <canvas id="game" width="420" height="620"></canvas>
-        <div id="startScreen" class="overlay">
-          <h2>Ready to drive Harold's car game?</h2>
-          <p>Use ← → or A / D to dodge traffic.</p>
-          <label class="plate-input" for="driverName">Driver name
-            <input id="driverName" maxlength="10" placeholder="YOUR NAME" autocomplete="nickname" />
-          </label>
-          <button id="startButton">Start game</button>
-        </div>
-        <div id="gameOver" class="overlay hidden">
-          <p class="eyebrow">CRASHED</p>
-          <h2>Game over</h2>
-          <p>You passed <strong id="finalScore">0</strong> obstacles.</p>
-          <button id="restartButton">Drive again</button>
-        </div>
-      </section>
-      <p class="help">Every obstacle you pass makes the road faster.</p>
-    </main>
-    <script src="game.js"></script>
-  </body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TrueDraft — Your words, sharpened</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="shell"><header class="topbar"><a class="brand" href="#">true<span>draft</span></a><p class="status"><i></i> Private to this browser</p><button class="save-button" id="saveDraft">Save draft</button></header>
+<section class="hero"><p class="eyebrow">THE NO-GENERATION WRITING SPACE</p><h1>Make it clearer.<br><em>Keep it yours.</em></h1><p>TrueDraft gives you grammar and clarity feedback without writing a single sentence for you.</p></section>
+<section class="workspace" aria-label="Essay workspace"><aside class="brief panel"><div class="panel-heading"><p class="eyebrow">YOUR BRIEF</p><button id="clearAll" class="text-button">Clear</button></div><label>Essay title<input id="essayTitle" maxlength="70" placeholder="My college essay"></label><label>Prompt or question<textarea id="prompt" rows="5" placeholder="Paste the prompt here to keep it in view."></textarea></label><div class="goal"><span>Suggested length</span><strong>250–650 words</strong></div><div class="checklist"><p class="eyebrow">BEFORE YOU SEND</p><label><input type="checkbox"> I answered the actual prompt</label><label><input type="checkbox"> I used a specific moment or detail</label><label><input type="checkbox"> It sounds like I would say it</label><label><input type="checkbox"> I read it aloud once</label></div></aside>
+<section class="editor panel"><div class="editor-top"><span id="draftName">Untitled essay</span><span id="wordCount">0 words · 0 min read</span></div><textarea id="essay" aria-label="Your essay" spellcheck="true" placeholder="Start with a real moment. Write it the way you would tell it to someone you trust.&#10;&#10;This space does not generate prose—it only helps you notice places to improve what you have written."></textarea><div class="editor-footer"><span>⌘ / Ctrl + S to save</span><span id="saveMessage" aria-live="polite"></span></div></section>
+<aside class="feedback panel"><div class="panel-heading"><div><p class="eyebrow">WRITING CHECK</p><h2>What to revisit</h2></div><button class="scan-button" id="scan">Check writing</button></div><p class="feedback-intro">These are signals for your review, not automatic rewrites.</p><div id="results" class="results"><div class="empty-result"><span>✦</span><p>Write a little, then check in. Your feedback will appear here.</p></div></div><div class="voice-note"><span>⌁</span><p><strong>No AI writing.</strong> Your draft stays in your browser and TrueDraft never generates essay text.</p></div></aside></section></main><template id="resultTemplate"><article class="result"><span class="result-icon"></span><div><h3></h3><p></p></div></article></template><script src="game.js"></script></body></html>
